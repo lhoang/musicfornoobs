@@ -51,20 +51,33 @@
                         <div class="minus">
                             <i class="fas fa-search-minus"></i>
                         </div>
-
                         <div class="slider">
                             <input id="slider" type="range" min="1" max="5000" value="1" style="width: 100%"/>
                         </div>
-
                         <div class="plus">
                             <i class="fas fa-search-plus"></i>
-
                         </div>
                     </div>
                 </div>
                 </p>
             </section>
-
+            <section>
+                <h3>Timbre</h3>
+                <div class="timbre">
+                    <img src="assets/pure-sine.png"
+                    class="wave">
+                    <div class="desc">Sinusoïde pure</div>
+                    <img src="assets/piano.png"
+                         class="wave">
+                    <div class="desc">Piano</div>
+                    <img src="assets/guitar.png"
+                         class="wave">
+                    <div class="desc">Guitare heavymetal</div>
+                    <img src="assets/square.png"
+                         class="wave">
+                    <div class="desc">Lead Square</div>
+                </div>
+            </section>
 
         </section>
         <section>Slide 2</section>
@@ -82,13 +95,21 @@
     Reveal.initialize({
         controls: true,
         //progress: true,
-        //history: true,
+        history: true,
         //center: true,
         transition: 'slide', // none/fade/slide/convex/concave/zoom
         dependencies: [
-            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                },
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                },
+            },
+            {src: 'plugin/notes/notes.js', async: true},
             {
                 src: 'plugin/highlight/highlight.js', async: true, callback: function () {
                     hljs.initHighlightingOnLoad();
@@ -98,35 +119,40 @@
     });
 
     // Wavesurfer
-    const wavesurfer = WaveSurfer.create({
+
+    // #1 SimpleWave
+    const simpleWave = WaveSurfer.create({
         container: '#waveform',
         waveColor: 'violet',
         progressColor: 'purple',
         height: '300',
     });
-    wavesurfer.load('assets/plucked-bass.mp3');
+
+    simpleWave.load('assets/plucked-bass.mp3');
 
     const playBtn = document.querySelector('#waveform');
-    playBtn.onclick = () => wavesurfer.play(0);
+    playBtn.onclick = () => simpleWave.play(0);
     const slider = document.querySelector('#slider');
 
     slider.oninput = function () {
         const zoomLevel = Number(slider.value);
-        wavesurfer.zoom(zoomLevel);
+        simpleWave.zoom(zoomLevel);
     };
 
+
+    // Events fragments
     Reveal.addEventListener('fragmentshown', function (event) {
         //console.log(event.fragment);
         switch (event.fragment.id) {
             case 'waveform1':
                 slider.value = 1;
-                wavesurfer.zoom(1);
-                wavesurfer.play(0);
+                simpleWave.zoom(1);
+                simpleWave.play(0);
                 break;
             case 'waveform2':
-                wavesurfer.stop();
+                simpleWave.stop();
                 slider.value = 4000;
-                wavesurfer.zoom(4000);
+                simpleWave.zoom(4000);
                 break;
             default:
                 console.log(event.fragment.id);
@@ -137,11 +163,11 @@
         //console.log(event.fragment);
         switch (event.fragment.id) {
             case 'waveform1':
-                wavesurfer.zoom(1);
-                wavesurfer.play(0);
+                simpleWave.zoom(1);
+                simpleWave.play(0);
                 break;
             case 'waveform2':
-                wavesurfer.play(0);
+                simpleWave.play(0);
                 break;
             default:
                 console.log(event.fragment.id);
