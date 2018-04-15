@@ -1,0 +1,17 @@
+.zoom-slide {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+}
+
+.zoom-slide .minus {
+    flex: 1 auto;
+}
+
+.zoom-slide .slider {
+    flex: 10 auto;
+}
+
+.zoom-slide .plus {
+    flex: 1 auto;
+}

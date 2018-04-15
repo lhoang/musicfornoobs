@@ -8,9 +8,13 @@
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!--Font-Awesome-->
+    <script defer src="lib/externals/fontawesome-all.min.js"></script>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -26,7 +30,7 @@
     <div class="slides">
         <section>
             <section>
-                Un peu de physique
+                <h2>Un peu de physique</h2>
             </section>
             <section>
                 Un son musical
@@ -43,17 +47,18 @@
                         <div id="waveform1" class="fragment"></div>
                         <div id="waveform2" class="fragment"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-1">
-                            <i class="glyphicon glyphicon-zoom-in"></i>
+                    <div class="zoom-slide">
+                        <div class="minus">
+                            <i class="fas fa-search-minus"></i>
                         </div>
 
-                        <div class="col-xs-10">
+                        <div class="slider">
                             <input id="slider" type="range" min="1" max="5000" value="1" style="width: 100%"/>
                         </div>
 
-                        <div class="col-xs-1">
-                            <i class="glyphicon glyphicon-zoom-out"></i>
+                        <div class="plus">
+                            <i class="fas fa-search-plus"></i>
+
                         </div>
                     </div>
                 </div>
@@ -114,11 +119,13 @@
         //console.log(event.fragment);
         switch (event.fragment.id) {
             case 'waveform1':
+                slider.value = 1;
                 wavesurfer.zoom(1);
                 wavesurfer.play(0);
                 break;
             case 'waveform2':
                 wavesurfer.stop();
+                slider.value = 4000;
                 wavesurfer.zoom(4000);
                 break;
             default:
