@@ -36,9 +36,9 @@
                 Un son musical
                 <p>
                 <ul>
-                    <li>Fréquence</li>
                     <li>Amplitude</li>
                     <li>Timbre</li>
+                    <li>Fréquence</li>
                 </ul>
                 </p>
                 <p>
@@ -65,18 +65,30 @@
                 <h3>Timbre</h3>
                 <div class="timbre">
                     <img src="assets/pure-sine.png"
-                    class="wave">
-                    <div class="desc">Sinusoïde pure</div>
+                         class="wave">
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/pure-sine.mp3">Sinusoïde pure
+                    </div>
                     <img src="assets/piano.png"
                          class="wave">
-                    <div class="desc">Piano</div>
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/piano.mp3">Piano
+                    </div>
                     <img src="assets/guitar.png"
                          class="wave">
-                    <div class="desc">Guitare heavymetal</div>
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/guitar.mp3">Guitare heavymetal
+                    </div>
                     <img src="assets/square.png"
                          class="wave">
-                    <div class="desc">Lead Square</div>
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/square.mp3">Lead Square
+                    </div>
                 </div>
+            </section>
+            <section>
+                <h3>Fréquence</h3>
+                <img src="assets/registre.jpg" width="900" height="600">
             </section>
 
         </section>
@@ -115,7 +127,20 @@
                     hljs.initHighlightingOnLoad();
                 },
             },
+            {
+                src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function () {
+                    return !!document.body.classList;
+                },
+            },
         ],
+        audio: {
+            prefix: 'assets/', 	// audio files are stored in the "audio" folder
+            suffix: '.mp3',		// audio files have the ".ogg" ending
+            advance: -1,
+            playerOpacity: 0.02,	// opacity value of audio player if unfocused
+            playerStyle: 'position: fixed; bottom: 120px; right: -30px; width: 20%; height:50px; z-index: 33;', // style used for container of audio controls
+            startAtFragment: true, // when moving to a slide, start at the current fragment or at the start of the slide
+        },
     });
 
     // Wavesurfer
