@@ -14,3 +14,4 @@
 
 * https://github.com/rajgoel/reveal.js-plugins/tree/master/anything
 
+* piano svg https://commons.wikimedia.org/wiki/File:PianoKeyboard.svg

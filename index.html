@@ -28,70 +28,192 @@
 <body>
 <div class="reveal">
     <div class="slides">
+
         <section>
-            <section>
-                <h2>Un peu de physique</h2>
-            </section>
-            <section>
-                Un son musical
-                <p>
-                <ul>
-                    <li>Amplitude</li>
-                    <li>Timbre</li>
-                    <li>Fréquence</li>
-                </ul>
-                </p>
-                <p>
-                <div class="simpleWave">
-                    <div id="waveform">
-                        <div id="waveform1" class="fragment"></div>
-                        <div id="waveform2" class="fragment"></div>
+            <h2>Un peu de physique</h2>
+        </section>
+        <section>
+            Un son musical
+            <p>
+            <ul>
+                <li>Amplitude</li>
+                <li>Fréquence</li>
+                <li>Timbre</li>
+            </ul>
+            </p>
+            <p>
+            <div class="simpleWave">
+                <div id="waveform">
+                    <div id="waveform1" class="fragment"></div>
+                    <div id="waveform2" class="fragment"></div>
+                </div>
+                <div class="zoom-slide">
+                    <div class="minus">
+                        <i class="fas fa-search-minus"></i>
                     </div>
-                    <div class="zoom-slide">
-                        <div class="minus">
-                            <i class="fas fa-search-minus"></i>
-                        </div>
-                        <div class="slider">
-                            <input id="slider" type="range" min="1" max="5000" value="1" style="width: 100%"/>
-                        </div>
-                        <div class="plus">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
+                    <div class="slider">
+                        <input id="slider" type="range" min="1" max="5000" value="1" style="width: 100%"/>
+                    </div>
+                    <div class="plus">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                </p>
-            </section>
-            <section>
-                <h3>Timbre</h3>
-                <div class="timbre">
-                    <img src="assets/pure-sine.png"
-                         class="wave">
-                    <div class="desc fragment highlight-green"
-                         data-audio-src="assets/pure-sine.mp3">Sinusoïde pure
-                    </div>
-                    <img src="assets/piano.png"
-                         class="wave">
-                    <div class="desc fragment highlight-green"
-                         data-audio-src="assets/piano.mp3">Piano
-                    </div>
-                    <img src="assets/guitar.png"
-                         class="wave">
-                    <div class="desc fragment highlight-green"
-                         data-audio-src="assets/guitar.mp3">Guitare heavymetal
-                    </div>
-                    <img src="assets/square.png"
-                         class="wave">
-                    <div class="desc fragment highlight-green"
-                         data-audio-src="assets/square.mp3">Lead Square
-                    </div>
-                </div>
-            </section>
+            </div>
+            </p>
+        </section>
+        <section>
             <section>
                 <h3>Fréquence</h3>
                 A4=440Hz
-                <img src="assets/registre.jpg" width="880" height="560">
+                <img src="assets/registre.jpg" width="850" height="520">
             </section>
-
+            <section>
+                <div class="fragment visible fade-out" data-fragment-index="1">(Petite parenthèse historique)</div>
+                <div class="fragment fade-up" data-fragment-index="1">
+                    <div class="fragment fade-out" data-fragment-index="3">
+                        <span class="fragment highlight-red" data-fragment-index="2">Ut</span> queant laxis
+                        <span class="fragment highlight-red" data-fragment-index="2">re</span>sonare fibris <br>
+                        <span class="fragment highlight-red" data-fragment-index="2">mi</span>ra gestorum
+                        <span class="fragment highlight-red" data-fragment-index="2">fa</span>muli tuorum, <br>
+                        <span class="fragment highlight-red" data-fragment-index="2">sol</span>ve polluti
+                        <span class="fragment highlight-red" data-fragment-index="2">la</span>bii reatum, <br>
+                        <span class="fragment highlight-red" data-fragment-index="2">S</span>ancte
+                        <span class="fragment highlight-red" data-fragment-index="2">I</span>ohannes.
+                    </div>
+                </div>
+                <div class="fragment fade-up" data-fragment-index="3">
+                    <table>
+                        <tr>
+                            <td>France, Italie, Espagne, Portugal</td>
+                            <td>la</td>
+                            <td>si</td>
+                            <td>do</td>
+                            <td>ré</td>
+                            <td>mi</td>
+                            <td>fa</td>
+                            <td>sol</td>
+                        </tr>
+                        <tr>
+                            <td>Angleterre</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h4>Echelles dans la musique occidentale</h4>
+                <div>
+                    <table class="echelle">
+                        <tr>
+                            <td>do</td>
+                            <td></td>
+                            <td>ré</td>
+                            <td></td>
+                            <td>mi</td>
+                            <td></td>
+                            <td>fa</td>
+                            <td></td>
+                            <td>sol</td>
+                            <td></td>
+                            <td>la</td>
+                            <td></td>
+                            <td>si</td>
+                            <td></td>
+                            <td>do</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1T</td>
+                            <td></td>
+                            <td>1T</td>
+                            <td></td>
+                            <td>&frac12;T</td>
+                            <td></td>
+                            <td>1T</td>
+                            <td></td>
+                            <td>1T</td>
+                            <td></td>
+                            <td>1T</td>
+                            <td></td>
+                            <td>&frac12;T</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>&#9839; = +&frac12; ton    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;    &#9837; = -&frac12; ton</p>
+                </div>
+                <div>
+                    <svg xml:space="preserve"
+                     id="piano-keyboard" width="700px" height="210">
+                    <g class="white">
+                        <rect x="0" y="0" width="100" height="210"/>
+                        <rect x="100" y="0" width="100" height="210"/>
+                        <rect x="200" y="0" width="100" height="210"/>
+                        <rect x="300" y="0" width="100" height="210"/>
+                        <rect x="400" y="0" width="100" height="210"/>
+                        <rect x="500" y="0" width="100" height="210"/>
+                        <rect x="600" y="0" width="100" height="210"/>
+                        <text x="30" y="200">Do</text>
+                        <text x="130" y="200">Ré</text>
+                        <text x="230" y="200">Mi</text>
+                        <text x="330" y="200">Fa</text>
+                        <text x="430" y="200">Sol</text>
+                        <text x="530" y="200">La</text>
+                        <text x="630" y="200">Si</text>
+                    </g>
+                    <g class="black">
+                        <rect x="66" y="0" width="66" height="140"/>
+                        <rect x="166" y="0" width="66" height="140"/>
+                        <rect x="366" y="0" width="66" height="140"/>
+                        <rect x="466" y="0" width="66" height="140"/>
+                        <rect x="566" y="0" width="66" height="140"/>
+                        <text x="70" y="60">Do&#9839;</text>
+                        <text x="170" y="60">Ré&#9839;</text>
+                        <text x="370" y="60">Fa&#9839;</text>
+                        <text x="470" y="60">Sol&#9839;</text>
+                        <text x="570" y="60">La&#9839;</text>
+                        <text x="70" y="100">Ré&#9837;</text>
+                        <text x="170" y="100">Mi&#9837;</text>
+                        <text x="365" y="100">Sol&#9837;</text>
+                        <text x="470" y="100">La&#9837;</text>
+                        <text x="570" y="100">Si&#9837;</text>
+                    </g>
+                </svg>
+                </div>
+                <div> = 12 demi-tons</div>
+            </section>
+        </section>
+        <section>
+            <h3>Timbre</h3>
+            <div class="timbre">
+                <img src="assets/pure-sine.png"
+                     class="wave">
+                <div class="desc fragment highlight-green"
+                     data-audio-src="assets/pure-sine.mp3">Sinusoïde pure
+                </div>
+                <img src="assets/piano.png"
+                     class="wave">
+                <div class="desc fragment highlight-green"
+                     data-audio-src="assets/piano.mp3">Piano
+                </div>
+                <img src="assets/guitar.png"
+                     class="wave">
+                <div class="desc fragment highlight-green"
+                     data-audio-src="assets/guitar.mp3">Guitare heavymetal
+                </div>
+                <img src="assets/square.png"
+                     class="wave">
+                <div class="desc fragment highlight-green"
+                     data-audio-src="assets/square.mp3">Lead Square
+                </div>
+            </div>
         </section>
         <section>Slide 2</section>
     </div>
@@ -181,7 +303,7 @@
                 simpleWave.zoom(4000);
                 break;
             default:
-                console.log(event.fragment.id);
+            //console.log(event.fragment.id);
         }
 
     });
@@ -196,7 +318,7 @@
                 simpleWave.play(0);
                 break;
             default:
-                console.log(event.fragment.id);
+            // console.log(event.fragment.id);
         }
 
     });
