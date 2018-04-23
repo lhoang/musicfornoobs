@@ -190,29 +190,38 @@
             </section>
         </section>
         <section>
-            <h3>Timbre</h3>
-            <div class="timbre">
-                <img src="assets/pure-sine.png"
-                     class="wave">
-                <div class="desc fragment highlight-green"
-                     data-audio-src="assets/pure-sine.mp3">Sinusoïde pure
+            <section>
+                <h3>Timbre</h3>
+                <div class="timbre">
+                    <img src="assets/pure-sine.png"
+                         class="wave">
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/pure-sine.mp3">Sinusoïde pure
+                    </div>
+                    <img src="assets/piano.png"
+                         class="wave">
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/piano.mp3">Piano
+                    </div>
+                    <img src="assets/guitar.png"
+                         class="wave">
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/guitar.mp3">Guitare heavymetal
+                    </div>
+                    <img src="assets/square.png"
+                         class="wave">
+                    <div class="desc fragment highlight-green"
+                         data-audio-src="assets/square.mp3">Lead Square
+                    </div>
                 </div>
-                <img src="assets/piano.png"
-                     class="wave">
-                <div class="desc fragment highlight-green"
-                     data-audio-src="assets/piano.mp3">Piano
-                </div>
-                <img src="assets/guitar.png"
-                     class="wave">
-                <div class="desc fragment highlight-green"
-                     data-audio-src="assets/guitar.mp3">Guitare heavymetal
-                </div>
-                <img src="assets/square.png"
-                     class="wave">
-                <div class="desc fragment highlight-green"
-                     data-audio-src="assets/square.mp3">Lead Square
-                </div>
-            </div>
+            </section>
+            <section>
+                <h3>Perception des notes</h3>
+                <p>Transformée de Fourier</p>
+                <img src="assets/Fourier_transform_time_and_frequency_domains.gif" width="500" height="400"
+                  class="fragment">
+            </section>
+
         </section>
         <section>
             <section>
@@ -340,7 +349,7 @@
         ],
         audio: {
             prefix: 'assets/', 	// audio files are stored in the "audio" folder
-            suffix: '.mp3',		// audio files have the ".ogg" ending
+            suffix: '.mp3',
             advance: -1,
             playerOpacity: 0.02,	// opacity value of audio player if unfocused
             playerStyle: 'position: fixed; bottom: 120px; right: -30px; width: 20%; height:50px; z-index: 33;', // style used for container of audio controls
@@ -364,7 +373,7 @@
     playBtn.onclick = () => simpleWave.play(0);
     const slider = document.querySelector('#slider');
 
-    slider.oninput = function () {
+    slider.oninput = () => {
         const zoomLevel = Number(slider.value);
         simpleWave.zoom(zoomLevel);
     };
