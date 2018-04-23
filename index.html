@@ -150,8 +150,7 @@
                     <p>&#9839; = +&frac12; ton    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;    &#9837; = -&frac12; ton</p>
                 </div>
                 <div>
-                    <svg xml:space="preserve"
-                     id="piano-keyboard" width="700px" height="210">
+                    <svg id="piano-keyboard" width="700px" height="210">
                     <g class="white">
                         <rect x="0" y="0" width="100" height="210"/>
                         <rect x="100" y="0" width="100" height="210"/>
@@ -215,7 +214,90 @@
                 </div>
             </div>
         </section>
-        <section>Slide 2</section>
+        <section>
+            <section>
+                <h3>Intervalles</h3>
+                <table class="intervalles">
+                    <tbody>
+                    <tr>
+                        <th>Intervalle</th>
+                        <td>
+                            <span class="fragment" data-fragment-index="1">Unisson</span>
+                        </td>
+                        <td>
+                            <span class="fragment" data-fragment-index="4">Seconde</span>
+                        </td>
+                        <td><span class="fragment" data-fragment-index="3">Tierce</span></td>
+                        <td><span class="fragment" data-fragment-index="2">Quarte</span></td>
+                        <td><span class="fragment" data-fragment-index="2">Quinte</span></td>
+                        <td><span class="fragment" data-fragment-index="3">Sixte</span></td>
+                        <td><span class="fragment" data-fragment-index="4">Septième</span></td>
+                        <td><span class="fragment" data-fragment-index="1">Octave</span></td>
+                    </tr>
+                    <tr>
+                        <th>entre do et </th>
+                        <td>do</td>
+                        <td>ré</td>
+                        <td>mi</td>
+                        <td>fa</td>
+                        <td>sol</td>
+                        <td>la</td>
+                        <td>si</td>
+                        <td>do</td>
+                    </tr>
+                    <tr>
+                        <th>tons </th>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2&frac12;</td>
+                        <td>3&frac12;</td>
+                        <td>4&frac12;</td>
+                        <td>5&frac12;</td>
+                        <td>6</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>Corde</h3>
+                <svg id="string" width="800px" height="210">
+                    <g class="string-line">
+                        <line x1="50" y1="100" x2="750" y2="100"></line>
+                        <line x1="50" y1="105" x2="50" y2="95"></line>
+                        <line x1="750" y1="105" x2="750" y2="95"></line>
+
+                        <!--Intervalles-->
+
+                        <line x1="400" y1="105" x2="400" y2="95"
+                              class="fragment" data-fragment-index="1"></line>
+                        <line x1="516.66" y1="105" x2="516.66" y2="95"
+                              class="fragment" data-fragment-index="2"></line>
+                        <line x1="575" y1="105" x2="575" y2="95"
+                              class="fragment" data-fragment-index="3"></line>
+                    </g>
+                    <g class="annotations">
+                        <g class="fragment" data-fragment-index="1">
+                            <text x="400" y="90">&frac12;</text>
+                            <text x="400" y="145">8ve</text>
+                        </g>
+                        <g class="fragment" data-fragment-index="2">
+                            <text x="516.66" y="90">&frac23;</text>
+                            <text x="516.66" y="145">5te</text>
+                        </g>
+                        <g class="fragment" data-fragment-index="3">
+                            <text x="575" y="90">&frac34;</text>
+                            <text x="575" y="145">4te</text>
+                        </g>
+
+
+                    </g>
+
+                </svg>
+
+            </section>
+
+        </section>
     </div>
 </div>
 

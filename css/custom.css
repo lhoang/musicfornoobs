@@ -64,3 +64,27 @@ svg#piano-keyboard g.black text{
     font-size: 2rem;
     fill: white;
 }
+
+/*
+Intervalles
+ */
+table.intervalles tbody tr:not(:first-child) {
+    border-top: 2px solid white;
+}
+table.intervalles tr td {
+    font-size: 1.5rem;
+    text-align: center;
+}
+table.intervalles tr th {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.string-line line{
+    stroke: yellow;
+    stroke-width: 2px;
+}
+#string .annotations {
+    font-size: 2rem;
+    fill: darkorange;
+    text-anchor: middle;
+}
