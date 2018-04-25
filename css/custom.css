@@ -2,6 +2,18 @@
     text-align: left;
 }
 
+.red {
+    color: red;
+}
+
+.reveal table th, .reveal table td {
+    border-color:  white;
+}
+
+table tbody tr:not(:first-child) {
+    border-top: 2px solid white;
+}
+
 /*
 Zoom Slider #1
 */
@@ -68,9 +80,7 @@ svg#piano-keyboard g.black text{
 /*
 Intervalles
  */
-table.intervalles tbody tr:not(:first-child) {
-    border-top: 2px solid white;
-}
+
 table.intervalles tr td {
     font-size: 1.5rem;
     text-align: center;
@@ -87,4 +97,21 @@ table.intervalles tr th {
     font-size: 2rem;
     fill: darkorange;
     text-anchor: middle;
+}
+table.reco {
+    font-size: 1.5rem;
+}
+
+/*
+Accords
+ */
+div.chords {
+    display: inline-block;
+    padding: 0 1rem;
+}
+div.chords span {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    display: block;
 }
