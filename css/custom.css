@@ -115,3 +115,40 @@ div.chords span {
     font-size: 2rem;
     display: block;
 }
+
+/*
+Gamme
+*/
+table.gamme tr td {
+    font-size: 1.5rem;
+}
+
+/*
+Degrés
+ */
+table.degres tr td {
+    text-align: center;
+}
+
+div.degre {
+    position: relative;
+    font-size: 5rem;
+    color: yellow;
+}
+
+div.degre.degre-I {
+    top: -350px;
+    left: 10px;
+}
+div.degre.degre-V {
+    top: calc(-350px - 5rem);
+    left: -223px;
+}
+div.degre.degre-IV {
+    top: calc(-350px - 11rem);
+    left: -110px;
+}
+div.degre.degre-VI {
+    top: calc(-350px - 18rem);
+    left: 114px;
+}

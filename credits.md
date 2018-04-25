@@ -15,3 +15,7 @@
 * https://github.com/rajgoel/reveal.js-plugins/tree/master/anything
 
 * piano svg https://commons.wikimedia.org/wiki/File:PianoKeyboard.svg
+
+Batman : https://www.flickr.com/photos/han_shot_first/with/36068178326/
+
+http://tvtropes.org/pmwiki/pmwiki.php/Main/TheFourChordsOfPop
