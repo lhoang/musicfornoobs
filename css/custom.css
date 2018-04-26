@@ -152,3 +152,7 @@ div.degre.degre-VI {
     top: calc(-350px - 18rem);
     left: 114px;
 }
+
+section img.wheel {
+    background-color: white;
+}
