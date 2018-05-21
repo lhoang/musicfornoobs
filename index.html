@@ -29,16 +29,20 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h2>Du rythme</h2>
+            <h2>La Musique pour les noobs</h2>
+            <div class="subtitle">Ou ce que les cours de musique du collège auraient dû m'apprendre</div>
             <aside class="notes">
                 Appuyer sur 'S' pour voir les notes !
                 Préparer Spotify
             </aside>
         </section>
         <section>
-            <img src="assets/rythme.png" alt="rythme">
+            <h2>Du rythme</h2>
         </section>
         <section>
+            <img src="assets/rythme.png" alt="rythme">
+        </section>
+        <section data-state="rythmOff">
             <h3>Mesure et chiffrage</h3>
             <div class="chords">
                 <span>X</span>
@@ -73,28 +77,27 @@
                 <br>youtube  : Schisme Tool
             </aside>
         </section>
-        <section>
-            Un bon public tape sur 2 et 4.
+        <section data-state="rythmOn">
+            Un bon public tape sur <span class="rythm rythm24">2</span> et <span class="rythm rythm24">4</span>.
+
             <aside class="notes">
                 I got a woman - Ray Charles
+                Ajouter ce mp3 sous le nom assets/4.0.mp3
             </aside>
         </section>
-        <section>
+        <section data-state="rythmOff">
             <h2>Un peu de physique</h2>
             <aside class="notes">
                 (Rebrancher l'enceinte)
             </aside>
         </section>
         <section>
-            Un son musical
-            <p>
+            <div>Un son musical</div>
             <ul>
                 <li>Amplitude</li>
                 <li>Fréquence</li>
                 <li>Timbre</li>
             </ul>
-            </p>
-            <p>
             <div class="simpleWave">
                 <div id="waveform">
                     <div id="waveform1" class="fragment"></div>
@@ -112,13 +115,18 @@
                     </div>
                 </div>
             </div>
-            </p>
         </section>
         <section>
             <section>
                 <h3>Fréquence</h3>
                 A4=440Hz
                 <img src="assets/registre.jpg" width="850" height="520">
+                <aside class="notes">
+                    Echelle Log <br>
+                    Pas toujours 440HZ<br>
+                    XVIIe 404Hz <br>
+                    Baroque - 415Hz
+                </aside>
             </section>
             <section>
                 <div class="fragment visible fade-out" data-fragment-index="1">(Petite parenthèse historique)</div>
@@ -158,9 +166,17 @@
                         </tr>
                     </table>
                 </div>
+                <aside class="notes">
+                    <ul>
+                        <li>XIe : poème</li>
+                        <li>XVIe : Si</li>
+                        <li>XVIIe: Do</li>
+                        <li>XIe : A, B...</li>
+                    </ul>
+                </aside>
             </section>
             <section>
-                <h4>Echelles dans la musique occidentale</h4>
+                <h4>Echelle diatonique</h4>
                 <div>
                     <table class="echelle">
                         <tr>
@@ -273,8 +289,11 @@
                 <p>Transformée de Fourier</p>
                 <img src="assets/Fourier_transform_time_and_frequency_domains.gif" width="500" height="400"
                      class="fragment">
+                <aside class="notes">
+                    domaine temps -> domaine fréquence <br>
+                    harmoniques
+                </aside>
             </section>
-
         </section>
         <section>
             <section>
@@ -356,7 +375,14 @@
                     </g>
 
                 </svg>
-
+                <aside class="notes">
+                    Démo : guitare <br>
+                    depuis antiquité, Pythagore , scientifiques travaillent sur la musique <br>
+                    Comment faire sonner les notes entre elles ? <br>
+                    Kaamelot: 4J 5J <br>
+                    Pb pour transposer <br>
+                    Résolu avec le système tempéré au XVIIe <br>
+                </aside>
             </section>
             <section>
                 <h3>Reconnaître les intervalles</h3>
@@ -401,7 +427,7 @@
                         <td>4J</td>
                         <td>2&frac12;</td>
                         <td class="fragment">
-                            La Marseillage/ Super Mario
+                            La Marseillaise / Super Mario
                         </td>
                     </tr>
                     <tr>
@@ -455,6 +481,9 @@
                     </tr>
                     </tbody>
                 </table>
+                <aside class="notes">
+
+                </aside>
             </section>
 
         </section>
@@ -508,7 +537,7 @@
                         <div class="chords">
                             <span>6 - do</span>
                             <span>3 - sol</span>
-                            <span>(1) - mi&#9837;</span>
+                            <span>1 - mi&#9837;</span>
                         </div>
                         <div class="chords">
                             <span>6 - mi&#9837;</span>
@@ -622,6 +651,9 @@
                     </tr>
                     </tbody>
                 </table>
+                <aside class="notes">
+                    musiqe tonale
+                </aside>
             </section>
             <section>
                 <table class="gamme">
@@ -757,6 +789,9 @@
                     </tr>
                     </tbody>
                 </table>
+                <aside class="notes">
+                    musique modale
+                </aside>
             </section>
         </section>
         <section>
@@ -806,19 +841,18 @@
             </div>
             <aside class="notes">
                 <ul style="column-count: 2;">
-                    <li>Take on me</li>
-                    <li>Let it be</li>
                     <li>No Women no cry</li>
+                    <li>Let it be</li>
                     <li>Country Roads</li>
-                    <li>Let it go</li>
                     <li>Under the Bridge</li>
-                    <li>Rebellion Lies</li>
                     <li>Complicated</li>
+                    <li>Let it go</li>
+                    <li>Take on me</li>
                     <li>Zombie</li>
+                    <li>Bullets with butterfly wings</li>
                     <li>Save Tonight</li>
                     <li>Aisha</li>
                     <li>Kids</li>
-                    <li>Bullets with butterfly wings</li>
                     <li>Despacito</li>
                 </ul>
             </aside>
@@ -854,12 +888,15 @@
                 <p class="fragment">Stevie Wonder, Beatles, ABBA, John Williams,...</p>
                 <p class="fragment">+ &frac12; ou 1 ton en fin de morceau pour un effet épique</p>
                 <aside class="notes">
-                    whitney : +1 <br>
-                    MJ +1/2<br>
-                    Heal the worl: +1 +1 <br>
-                    My heart + 1 1/2 <br>
+                    Man in the mirror +1/2 (change) 2:52<br>
+                    I will always love you : +1 3:07 <br>
+                    My heart + 1 1/2 3:24<br>
+                    Heal the world: +1 +1 4:33 4:55 <br>
                 </aside>
             </section>
+        </section>
+        <section>
+            <h1>♪</h1>
         </section>
     </div>
 </div>
@@ -867,6 +904,7 @@
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 <script src="lib/externals/wavesurfer.min.js"></script>
+<script src="lib/externals/rythm.min.js"></script>
 
 <script>
     // More info about config & dependencies:
@@ -967,6 +1005,25 @@
         }
 
     });
+
+    // Rythm.js
+    const rythm = new Rythm();
+
+    Reveal.addEventListener( 'rythmOn', () => {
+
+        // pour #audioplayer-4.0
+        // const audio24 = document.querySelector('#audioplayer-\\34\\.\\30');
+        // console.log('rythm connected', audio24);
+        //rythm.connectExternalAudioElement(audio24);
+        rythm.setMusic('assets/4.0.mp3');
+        rythm.start();
+        rythm.addRythm('rythm24', 'jump', 0, 30);
+
+        //rythm.addRythm('rythm24', 'jump', 0, 30);
+    }, false );
+    Reveal.addEventListener( 'rythmOff', () => {
+        rythm.stop();
+    }, false );
 
 </script>
 </body>
