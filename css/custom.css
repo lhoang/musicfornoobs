@@ -165,3 +165,8 @@ div.degre.degre-VI {
 section img.wheel {
     background-color: white;
 }
+
+section#credits ul {
+    font-size: 1.5rem;
+    width: 120%;
+}

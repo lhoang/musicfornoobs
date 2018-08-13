@@ -16,8 +16,9 @@
 
 * piano svg https://commons.wikimedia.org/wiki/File:PianoKeyboard.svg
 
-Batman : https://www.flickr.com/photos/han_shot_first/with/36068178326/
 
-http://tvtropes.org/pmwiki/pmwiki.php/Main/TheFourChordsOfPop
+* Batman : https://www.flickr.com/photos/han_shot_first/with/36068178326/
 
-https://commons.wikimedia.org/wiki/File:Melcul_tonalitatilor_-_lasido.svg
+* http://tvtropes.org/pmwiki/pmwiki.php/Main/TheFourChordsOfPop
+
+* https://commons.wikimedia.org/wiki/File:Melcul_tonalitatilor_-_lasido.svg
